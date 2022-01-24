@@ -23,7 +23,9 @@
       font-weight: bold;
       font-size: 30px;
       line-height: 36px;
-      color: #2D3748;
+      a {
+        color: #2D3748;
+      }
     }
     #clamped-content-undefined {
       color: #718096;
@@ -45,6 +47,11 @@
     }
     .footer {
       margin-top: 10px;
+      a {
+        float: right;
+        font-size: 18px;
+        color: #2D3748;
+      }
     }
     .left {
       margin: auto;
@@ -54,11 +61,7 @@
       font-size: 15px;
       color: #718096;
     }
-    a {
-      float: right;
-      font-size: 18px;
-      color: #2D3748;
-    }
+   
   }
 }
 

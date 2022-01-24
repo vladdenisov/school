@@ -14,7 +14,7 @@ const Articles = () => {
             <Grid fluid>
               <Col xs={14}>
                 <div className='left'>
-                  <Row><span className='title'>{el.title}</span></Row>
+                  <Row><span className='title'><Link to={encodeURL(el.title)}>{el.title}</Link></span></Row>
                   <Row><ClampLines text={el.content[0]} lines={3} buttons={false}></ClampLines></Row>
                   <Row className='footer'><span className='date'>{el.date}</span><Link to={encodeURL(el.title)}>Читать</Link></Row>
                 </div>
