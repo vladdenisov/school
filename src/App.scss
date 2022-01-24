@@ -1,0 +1,28 @@
+.App {
+  width: 100%;
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    .rs-navbar-brand {
+      font-weight: bold;
+      font-size: 20px;
+      color: #000000;
+      padding: 0;
+      text-align: center;
+      height: auto;
+      margin: auto 40px auto 20px;
+    }
+    .rs-navbar-item {
+      font-size: 16px;
+      color: #000000;
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+}
