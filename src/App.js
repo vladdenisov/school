@@ -11,6 +11,9 @@ import Contacts from './Components/Contacts';
 import {data} from "./articles/articles"
 import Article from './Components/Articles/Article';
 import { encodeURL } from './utils/url';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom'
+
 function App() {
   const MyLink = React.forwardRef((props, ref) => {
     const { href, as, ...rest } = props;
@@ -20,6 +23,10 @@ function App() {
       </Link>
     );
   });
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <div className="App">
       <header>
