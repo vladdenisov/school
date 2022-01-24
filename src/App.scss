@@ -26,3 +26,26 @@
     }
   }
 }
+
+@media only screen and (max-width: 430px) {
+  .navbar {
+     * { 
+      font-size: 14px !important;
+     }
+    .rs-navbar-brand {
+      margin-left: 10px !important;
+      margin-right: 15px !important;
+    }
+    .rs-nav {
+      display: flex;
+      flex-direction: row;
+      width: calc(100% - 71px);
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .rs-navbar-item {
+      padding: 0 !important;
+      margin: auto !important;
+    }
+  }
+}
